@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "278852701205",
+    "firebase_url": "https://coursecenter-ddb81.firebaseio.com",
+    "project_id": "coursecenter-ddb81",
+    "storage_bucket": "coursecenter-ddb81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278852701205:android:e46f72d7ec26de98",
+        "android_client_info": {
+          "package_name": "pro.phoenix.coursecenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278852701205-vlberal498tohtt38m2ecesadho3vec2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pro.phoenix.coursecenter",
+            "certificate_hash": "ff292d7f0aca1229b555d69fb9affbee875961d0"
+          }
+        },
+        {
+          "client_id": "278852701205-3jmueknpoma46futocicmsl4tq7psh1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS4003T76VjCCXa1nfrWFs1Dw_4wIQxlQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278852701205-3jmueknpoma46futocicmsl4tq7psh1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pro.phoenix.coursecenter.AddRoomActivity">
+
+    <TextView
+        android:id="@+id/roomNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/roomNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:ems="10"
+        android:hint="Room Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/roomNameTV"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/availabilityRoomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Availability"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomNameTV" />
+
+    <Switch
+        android:id="@+id/availabilitySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On / Off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/availabilityRoomTV"
+        app:layout_constraintStart_toStartOf="@+id/roomNameEdit" />
+
+    <TextView
+        android:id="@+id/coastTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Coast / Hour"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availabilityRoomTV" />
+
+    <EditText
+        android:id="@+id/coastEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ex: 50.0 , 40.5 LE"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/coastTV"
+        app:layout_constraintStart_toStartOf="@+id/availabilitySwitch" />
+
+    <TextView
+        android:id="@+id/airConTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Air C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coastTV" />
+
+    <Switch
+        android:id="@+id/airSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On / Off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/airConTitleView"
+        app:layout_constraintStart_toStartOf="@+id/coastEdit" />
+
+    <TextView
+        android:id="@+id/dataShowTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Datashow"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airConTitleView" />
+
+    <Switch
+        android:id="@+id/dataShowSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On / Off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dataShowTV"
+        app:layout_constraintStart_toStartOf="@+id/airSwitch" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataShowSwitch" />
+
+</android.support.constraint.ConstraintLayout>
